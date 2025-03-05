@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
 import { StatusBar } from 'react-native';
 import {Router} from './src/routes/router';
+import { AuthProvider } from './src/Contexts/Auth';
 
 export default function App() {
-  return <Router />   
-  ;
+  return (<AuthProvider><Router /></AuthProvider>)  ;
 }
 
 
